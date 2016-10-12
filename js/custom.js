@@ -75,7 +75,6 @@
   });
 
   $('.tour-carousel').owlCarousel({
-    items: 1,
     loop: true,
     autoplay: true,
     autoplaySpeed: 400,
@@ -86,7 +85,16 @@
       '<i class="icon-chevron-sign-right"></i>'
     ],
     autoplayTimeout: 6000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    margin: 30,
+    responsive : {
+      0 : {
+        items : 1
+      },
+      768 : {
+        items : 2
+      }
+    }
   });
 
    new Swiper('.swiper-container', {

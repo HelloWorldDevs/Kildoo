@@ -167,21 +167,9 @@ section {
   }
 }
 
-
 #primary-menu-trigger {
   font-size: 30px;
   pointer-events: auto;
-}
-
-
-
-.icon-arrow-down {
-  color: white;
-  border: 2px solid white;
-  border-radius: 10000px;
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
 }
 
 
@@ -296,7 +284,7 @@ button[class=close] {
 }
 
 #section-insurance {
-  background-image:url('/assets/membership-row-paul-lee.jpg');
+  background-image:url('/assets/kildoo-membership-row.jpg');
   @media (max-width: $width-sm) {
     background-image: none;
     & .insurance-mobile-fix {

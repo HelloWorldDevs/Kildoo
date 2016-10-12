@@ -45,7 +45,7 @@
   HWD.mailForm('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
   // initial carousel in modal
-  $('.team-carousel').owlCarousel({
+  $('.team-carousel, .service-carousel').owlCarousel({
     items: 4,
     loop: true,
     autoplay: true,

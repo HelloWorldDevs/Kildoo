@@ -1,6 +1,6 @@
 .specials-card {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 11px;
   height: 100%;
   padding-bottom: 20px;
   & h5 {
@@ -8,23 +8,35 @@
     padding-top: 10px;
   }
 }
+
+.specials-card1 {
+  border: solid 2px #4D557C;
+}
+
+.specials-card2 {
+  border: solid 2px #5F7812;
+}
+
+.specials-card3 {
+  border: solid 2px #80816F;
+}
+
 .specials-1 {
-  background: #F7881F;
-  color:#F7881F;
+  background: #4D557C;
+  color:#4D557C;
 }
 .specials-2 {
-  background: #F36525;
-  color:#F36525;
+  background: #5F7812;
+  color:#5F7812;
 }
 
 .specials-3 {
-  background: #FBAD17;
-  color:#FBAD17;
+  background: #80816F;
+  color:#80816F;
 }
 .specials-row p {
   font-size:18px;
   color:#797F8C;
-  margin-bottom:0px;
   line-height:25px !important;
   margin-top:20px;
 }
@@ -32,6 +44,7 @@
   font-size:14px;
   color:#797F8C;
 }
+
 .specials-save {
   font-size:18px;
   text-transform:uppercase;
@@ -95,6 +108,16 @@
   left: -10px;
   top: 40px;
 }
+.price-free {
+  font-size: 46px;
+  color: #FFF;
+  position: absolute;
+  padding-top: 30px;
+  padding-left: 0px;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+}
 .dollar {
   display: none;
 }
@@ -117,4 +140,8 @@
     margin:0 auto;
     margin-bottom:50px;
   }
+}
+
+.specials-bottom p.specials-last {
+  margin-top: 45px;
 }

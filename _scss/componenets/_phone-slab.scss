@@ -16,12 +16,9 @@
     }
   }
 
-  &-topbr {
-    border-top: 5px solid #14718a;
-  }
   &__left {
     text-align: right;
-    border-right: solid 2px #A69F9B;
+    border-right: solid 2px #FFF;
     @media screen and (max-width: $width-md) {
       text-align: center;
       border-right: none;

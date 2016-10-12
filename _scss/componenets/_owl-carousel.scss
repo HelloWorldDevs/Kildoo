@@ -8,19 +8,10 @@
 }
 
 
+//Hover action for carousel images
 .img-hover-plus {
-  margin: 0 auto;
   display: inline-block;
   position: relative;
-  &:hover:after {
-    content: "+";
-    position: absolute;
-    top: 35%;
-    color: white;
-    font-size: 60px;
-    left: 45%;
-    z-index: 11;
-  }
   &:hover:before {
     content: " ";
     display: block;
@@ -30,5 +21,16 @@
     height: 100%;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.37);
+  }
+  &:hover:after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    color: white;
+    font-size: 60px;
+    left: 50%;
+    margin-left: -15px;
+    z-index: 11;
   }
 }

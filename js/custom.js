@@ -99,22 +99,23 @@
 
    new Swiper('.swiper-container', {
       speed: 400,
-      autoplay: false
+      autoplay: false,
+      loop: true
     });
 
   $('#google-map5').gMap({
-    address: '29.7488927,-95.4692716',
+    address: '31.8995069,-110.9909628',
     maptype: 'ROADMAP',
     zoom: 15,
     markers: [
       {
-        address: "29.7485368,-95.4727371"
+        address: "31.899167,-110.993056"
       }
     ],
     doubleclickzoom: false,
     controls: {
       panControl: false,
-      zoomControl: true,
+      zoomControl: false,
       mapTypeControl: false,
       draggable: false,
       scaleControl: false,

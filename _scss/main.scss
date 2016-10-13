@@ -156,6 +156,11 @@ section {
   line-height: 1.3;
 }
 
+#content .line-height-medium {
+  line-height: 2.0;
+}
+
+
 .bg-centered {
   background-position: center;
   @media (max-width: $width-md) {
@@ -308,10 +313,10 @@ button[class=close] {
 
 #section-insurance {
   padding-top: 50px;
+  padding-bottom: 50px;
   background-image: url('./../assets/kildoo-membership-row.jpg');
   @media (max-width: $width-sm - 1) {
     padding-top: 0px;
-    background-color: #faf4ea;
     background-image: none;
     & .padding-vert-2x {
       padding-top: 30px;
@@ -320,6 +325,14 @@ button[class=close] {
   }
   & p {
     line-height: 1.2;
+  }
+
+}
+
+.insurance-card {
+  @media (min-width: $width-sm) and (max-width: $width-md) {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
   }
 }
 

@@ -286,13 +286,40 @@ button[class=close] {
   font-size: 50px;
 }
 
+//#section-insurance {
+//  background-image:url('/assets/kildoo-membership-row.jpg');
+//  @media (max-width: $width-sm) {
+//    background-image: none;
+//    & .insurance-mobile-fix {
+//      margin-top: -100px;
+//    }
+//  }
+//}
+
+
+//Fix for insurance background on mobile
+.mobile-insurance-fix {
+  display: none;
+  @media (max-width: $width-sm - 1) {
+    display: block;
+    margin-top: -30px;
+  }
+}
+
 #section-insurance {
-  background-image:url('/assets/kildoo-membership-row.jpg');
-  @media (max-width: $width-sm) {
+  padding-top: 50px;
+  background-image: url('./../assets/kildoo-membership-row.jpg');
+  @media (max-width: $width-sm - 1) {
+    padding-top: 0px;
+    background-color: #faf4ea;
     background-image: none;
-    & .insurance-mobile-fix {
-      margin-top: -100px;
+    & .padding-vert-2x {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
+  }
+  & p {
+    line-height: 1.2;
   }
 }
 

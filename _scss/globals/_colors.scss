@@ -88,8 +88,31 @@ a.font-white {
   color: #FFF;
 }
 
-a:hover.btn.btn-slider {
+a.btn.btn-slider:hover {
   background-color: #E7E7E7;
   color: #4A4A4A;
 }
+
+.btn.btn-style-2 {
+  background-color: rgba(0,0,0,0);
+  border-color: #5F7812;
+  color: #5F7812;
+}
+
+a.btn.btn-style-2:hover {
+  background-color: rgba(95, 120, 18, 0.20);
+  color: #5F7812;
+}
+
+.btn.btn-style-3 {
+  background-color: #A6AF14;
+  border-color: #FFF;
+  color: #FFF;
+}
+
+a.btn.btn-style-3:hover {
+  background-color: #838c14;
+  color: #FFF;
+}
+
 

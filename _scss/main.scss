@@ -369,3 +369,9 @@ button[class=close] {
   background-repeat: no-repeat;
   background-position-y: 100%;
 }
+
+#section-services .owl-carousel .owl-nav [class*=owl-],
+#section-about .owl-carousel .owl-nav [class*=owl-] {
+  top: 40%;
+
+}

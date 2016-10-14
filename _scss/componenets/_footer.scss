@@ -3,6 +3,9 @@
   position: relative;
   background-color: #14718A;
   border-top: none;
+  & a:hover {
+    text-decoration: none;
+  }
 }
 
 .social-icon-wrapper {

@@ -205,6 +205,10 @@ button.btn {
 	color: #FFF;
 }
 
+a:hover[href^="tel:"] {
+	text-decoration: none;
+}
+
 
 
 p {

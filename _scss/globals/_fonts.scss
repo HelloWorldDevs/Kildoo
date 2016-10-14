@@ -118,12 +118,12 @@ h3 {
 
 h4 {
 	font-size: 28px;
-	& span.quotee {
+	& span.diminished {
 		font-size: 21px;
 	}
 	@media screen and (max-width: $width-lg) {
 		font-size: 22px;
-		& span.quotee {
+		& span.diminished {
 			font-size: 18px;
 		}
 	}
@@ -208,7 +208,7 @@ button.btn {
 
 
 p {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 100;
 	@media screen and (max-width: $width-sm) {
 		font-size: 16px;

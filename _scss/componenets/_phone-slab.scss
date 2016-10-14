@@ -16,6 +16,11 @@
     }
   }
 
+  & a:hover {
+    color: initial;
+    text-decoration: none;
+  }
+
   &__left {
     text-align: right;
     border-right: solid 2px #FFF;

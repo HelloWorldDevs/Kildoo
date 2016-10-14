@@ -128,7 +128,7 @@
     }
   });
 
-  $('.logo-carousel').owlCarousel({
+  $(".logo-carousel").owlCarousel({
     autoplay: true,
     autoplaySpeed: 400,
     nav: false,
@@ -153,7 +153,7 @@
 
    new Swiper('.swiper-container', {
       speed: 600,
-      autoplay: 6000,
+      autoplay: false,
       loop: true
     });
 
@@ -183,24 +183,25 @@
   // ======================================================================================
   
   // Store Menu Offests for reset on screen resize reset
+  var $PrimaryMenu = $('#primary-menu');
   var menuOffsets = [];
-  $('#primary-menu').find('a').each(function(index) {
+  $PrimaryMenu.find('a').each(function(index) {
     menuOffsets.push($(this).attr('data-offset'));
   });
 
   // kills menu offsets for tablet and mobile on load
   if ($(window).width() < 993) {
-    $('#primary-menu').find('a').attr('data-offset', '0');
+    $PrimaryMenu.find('a').attr('data-offset', '0');
   }
 
   // Fix scrollTo offsets on tablet and mobile versions (sets data offsets to zero)
   $(window).resize(function() {
     if ($(window).width() < 993) {
       // sets all menu offset to zero for mobile
-      $('#primary-menu').find('a').attr('data-offset', '0');
+      $PrimaryMenu.find('a').attr('data-offset', '0');
     } else {
       // resets all menu offsets to origin value
-      $('#primary-menu').find('a').each(function(index) {
+      $PrimaryMenu.find('a').each(function(index) {
         $(this).attr('data-offset', menuOffsets[index]);
       });
     }

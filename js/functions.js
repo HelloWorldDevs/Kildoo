@@ -7,7 +7,7 @@ $.fn.inlineStyle = function (prop) {
 $.fn.doOnce = function( func ) {
 	this.length && func.apply( this );
 	return this;
-}
+};
 
 if( $().infinitescroll ) {
 
@@ -1945,7 +1945,7 @@ var SEMICOLON = SEMICOLON || {};
 						} else {
 							var portfolioOverlayIconHeight = 0;
 						}
-						var portfolioOverlayMiddleAlign = ( portfolioOverlayHeight - portfolioOverlayDescHeight - portfolioOverlayIconHeight ) / 2
+						var portfolioOverlayMiddleAlign = ( portfolioOverlayHeight - portfolioOverlayDescHeight - portfolioOverlayIconHeight ) / 2;
 						element.find('.portfolio-desc').css({ 'margin-top': portfolioOverlayMiddleAlign });
 					}
 				});

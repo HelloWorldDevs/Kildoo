@@ -45,8 +45,7 @@
   HWD.mailForm('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
   // initial carousel in modal
-  $('.team-carousel, .service-carousel').owlCarousel({
-    items: 4,
+  $('.service-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     autoplaySpeed: 400,
@@ -70,12 +69,44 @@
       },
       990 : {
         items : 4
+      },
+      1200 : {
+        items : 5
+      }
+    }
+  });
+
+  $('.team-carousel').owlCarousel({
+    autoplay: true,
+    autoplaySpeed: 400,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="icon-chevron-sign-left"></i>',
+      '<i class="icon-chevron-sign-right"></i>'
+    ],
+    autoplayTimeout: 6000,
+    autoplayHoverPause:true,
+    responsive : {
+      0 : {
+        items : 1
+      },
+      550 : {
+        items : 2
+      },
+      768 : {
+        items : 3
+      },
+      990 : {
+        items : 4
+      },
+      1200 : {
+        items : 5
       }
     }
   });
 
   $('.tour-carousel').owlCarousel({
-    loop: true,
     autoplay: true,
     autoplaySpeed: 400,
     nav: true,
@@ -97,9 +128,32 @@
     }
   });
 
+  $('.logo-carousel').owlCarousel({
+    autoplay: true,
+    autoplaySpeed: 400,
+    nav: false,
+    dots: false,
+    autoplayTimeout: 4000,
+    margin: 30,
+    responsive : {
+      0 : {
+        items : 2
+      },
+      550 : {
+        items : 3
+      },
+      768 : {
+        items : 4
+      },
+      990 : {
+        items : 5
+      }
+    }
+  });
+
    new Swiper('.swiper-container', {
-      speed: 400,
-      autoplay: false,
+      speed: 600,
+      autoplay: 6000,
       loop: true
     });
 

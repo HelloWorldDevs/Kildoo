@@ -287,7 +287,7 @@ button[class=close] {
 //Fix for insurance background on mobile
 .mobile-insurance-fix {
   display: none;
-  @media (max-width: $width-sm - 1) {
+  @media (max-width: $width-md - 1) {
     display: block;
     margin-top: -30px;
   }
@@ -297,7 +297,7 @@ button[class=close] {
   padding-top: 50px;
   padding-bottom: 50px;
   background-image: url('./../assets/kildoo-membership-row.jpg');
-  @media (max-width: $width-sm - 1) {
+  @media (max-width: $width-md - 1) {
     padding-top: 0px;
     background-image: none;
     & .padding-vert-2x {
@@ -313,7 +313,7 @@ button[class=close] {
 
 .insurance-card {
   @media (min-width: $width-sm) and (max-width: $width-md) {
-    background-color: rgba(255, 255, 255, 0.7);
+    //background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
   }
 }
